@@ -1,0 +1,17 @@
+@import "~bootstrap/scss/bootstrap-utilities";
+
+@import "./abstract/colorPalette";
+@import "./vendor/bootstrap";
+@import "./base/typography";
+@import "./base/font";
+
+body {
+    color: getColor(blue-gray3);
+    background-color: getColor(black-gray-3);
+    font-family: "Prompt", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 14px;
+    margin: 0px;
+    position: relative;
+    min-height: 100vh;
+    height: 100%;
+}
