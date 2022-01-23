@@ -24,7 +24,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <div className='d-flex justify-content-center'>
-        <Button variant="info">Info</Button>
+
       </div>
     </div>
   )
