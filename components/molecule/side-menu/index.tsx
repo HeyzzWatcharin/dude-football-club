@@ -1,13 +1,23 @@
+import classNames from 'classnames';
 import React from 'react';
+import { Container } from 'react-bootstrap';
+import CardLeague from '../card-league';
 
-const SIdeNavbarMenu = () => {
+import style from './style.module.scss';
+
+const SideNavbarMenu = () => {
     return (
         <>
-            <h1>
-                Football Clubs
-            </h1>
+            <Container>
+                <span className='body-4'>
+                    Dude Clubs
+                </span>
+                <div className={classNames(style['max-with-styling'])}>
+                    <CardLeague />
+                </div>
+            </Container>
         </>
     )
 };
 
-export default SIdeNavbarMenu;
+export default SideNavbarMenu;

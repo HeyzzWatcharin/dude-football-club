@@ -7,6 +7,7 @@ import * as yup from 'yup';
 
 import style from './style.module.scss';
 import useTranslation from '../../../hooks/useTranslation';
+import classNames from 'classnames';
 
 interface ISearchInput {
     wording: string;
@@ -37,7 +38,10 @@ const DudeNavbar: React.FC<ISideMenu> = () => {
                 expand="lg"
                 className={classnames(style['navbar-styling'])}>
                 <Container>
-                    <Navbar.Brand href="#home" className='text-white'>
+                    <Navbar.Brand
+                        href="#home"
+                        className='text-white'
+                    >
                         {translate('NAVBAR_HEADER')}
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
