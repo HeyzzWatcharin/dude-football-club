@@ -8,8 +8,10 @@ import DudeNavbar from '../components/molecule/navbar-header/navbar';
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <DudeNavbar />
-      <Component {...pageProps} />
+      <div className='bg-color-blue'>
+        <DudeNavbar />
+        <Component {...pageProps} />
+      </div>
     </>
   )
 }

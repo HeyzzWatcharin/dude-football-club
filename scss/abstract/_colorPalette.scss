@@ -1,35 +1,21 @@
 $palette-map: (
-    blue-50: #e4effb,
-    primary-normal: #2fd1d9,
-    primary-hover: #6ae1e7,
-    secondary-normal: #14aaf5,
-    secondary-normal-active: argb(20, 170, 245, 0.5),
-    secondary-hover: #3cbeff,
-    secondary-dark: #6e8efb,
-    blue-select: #e3f5fe,
-    blue-select-active: argb(227, 245, 254, 0.5),
-    pink-normal: #eb4174,
-    red-normal: #e1000c,
-    green-normal: #21d76a,
-    green-normal-2: #00df67,
-    green-normal-3: #22999f,
-    green-normal-4: #2fd1d9,
-    green-1: #22999f,
-    green-gradient: linear-gradient(90deg, #5bdfe6 0%, rgba(92, 241, 161, 0.9) 100%),
-    blue-mint: rgba(130, 246, 214),
-    yellow-normal: #ffc83c,
-    black: #000000,
-    blackGray: #e9eaeb,
-    white: #ffffff,
-    blue-gray1: #151b26,
-    blue-gray2: #273240,
-    blue-gray3: #6f7782,
-    blue-gray4: #cbd4db,
-    blue-gray5: #666e79,
-    // This is wrong, don't use it and replace with blue-gray3 everywhere else.
-    main-gardient: linear-gradient(307.61deg, #82f6d6 39.05%, #12d8fa 61.02%, #1caefe 99.68%),
+    primary-blue: #010b8b,
+    primary-black: #1e0521,
+    primary-blue-sky: #0be7fb,
+    primary-yellow: #fecc50,
+    primary-pink: #ff6d69,
 );
 
 @function getColor($name) {
     @return map_get($palette-map, $name);
+}
+
+.text-white {
+    color: white;
+}
+
+.bg-color-blue {
+    min-height: 100vh;
+    height: 100%;
+    background-image: linear-gradient(to right, #1f6a9c, #5a47a0);
 }
