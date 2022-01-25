@@ -37,6 +37,7 @@ const CardTier: React.FC<ICardTier> = ({
                                             {data.tier}
                                             <br />
                                             <span className='body-1 text-smoke'>
+                                                {/* Todo: Don't fotgot modify it!. */}
                                                 England
                                             </span>
                                         </p>
