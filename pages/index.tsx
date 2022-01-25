@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { useEffect } from 'react'
 import { Button } from 'react-bootstrap'
+import SideNavbarMenu from '../components/molecule/side-menu'
 import styles from '../styles/Home.module.css'
 import client from '../util/client'
 
@@ -22,11 +23,11 @@ const Home: NextPage = () => {
   }, [])
 
   return (
-    <div className={styles.container}>
-      <div className='d-flex justify-content-center'>
-        <Button variant="info">Info</Button>
+    <>
+      <div>
+        <SideNavbarMenu />
       </div>
-    </div>
+    </>
   )
 }
 
