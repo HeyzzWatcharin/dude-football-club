@@ -35,12 +35,12 @@ const DudeNavbar: React.FC<ISideMenu> = () => {
         <>
             <Navbar
                 collapseOnSelect
-                expand="lg"
-                className={classnames(style['navbar-styling'])}>
-                <Container>
+                expand="xl"
+                className={classnames(style['navbar-styling'],'mx-5')}>
+                {/* <Container> */}
                     <Navbar.Brand
                         href="#home"
-                        className='text-white'
+                        className='text-white body-5'
                     >
                         {translate('NAVBAR_HEADER')}
                     </Navbar.Brand>
@@ -57,7 +57,7 @@ const DudeNavbar: React.FC<ISideMenu> = () => {
                             />
                         </Nav>
                     </Navbar.Collapse>
-                </Container>
+                {/* </Container> */}
             </Navbar>
         </>
     )

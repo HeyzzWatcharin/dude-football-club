@@ -4,6 +4,9 @@ $palette-map: (
     primary-blue-sky: #0be7fb,
     primary-yellow: #fecc50,
     primary-pink: #ff6d69,
+    white-smoke: rgb(173, 173, 173),
+    blue-1: #1f6a9c,
+    purple-1: #5a47a0,
 );
 
 @function getColor($name) {
@@ -15,11 +18,11 @@ $palette-map: (
 }
 
 .text-smoke {
-    color: rgb(173, 173, 173);
+    color: getColor(white-smoke);
 }
 
 .bg-color-blue {
     min-height: 100vh;
     height: 100%;
-    background-image: linear-gradient(to right, #1f6a9c, #5a47a0);
+    background-image: linear-gradient(to right, getColor(blue-1), getColor(purple-1));
 }
