@@ -13,7 +13,7 @@ const SideNavbarMenu = () => {
 
     return (
         <>
-            <div className='mx-5'>
+            <div>
                 <Card className={classNames(style['card-sidenav-styling'])}>
                     <span className='header-5'>
                         {translate('FOOTBALL_LEAGUE')}

@@ -13,8 +13,16 @@ $palette-map: (
     @return map_get($palette-map, $name);
 }
 
+.text-blue {
+    color: getColor(primary-blue);
+}
+
 .text-white {
     color: white;
+}
+
+.text-black {
+    color: getColor(primary-black);
 }
 
 .text-smoke {

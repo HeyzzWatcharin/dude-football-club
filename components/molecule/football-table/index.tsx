@@ -1,17 +1,30 @@
-import React from 'react';
-import { Table } from 'react-bootstrap';
+import React, { useEffect } from 'react';
+import { Card, Col, Row, Table } from 'react-bootstrap';
+import { ICompetition } from '../../../interface/matches';
+import MatchCardTable from '../../atom/matches-card';
+import CardTier from '../card-tier';
+import classNames from 'classnames';
+import style from './style.module.scss'
 
-const FootballTable = () => {
+interface IFootballTable {
+    competitionData: ICompetition[];
+}
+
+const FootballTable: React.FC<IFootballTable> = ({
+    competitionData
+}) => {
+
+    // console.log(competitionData);
+
+
     return (
         <>
-            <Table>
-                <thead>
-                    
-                </thead>
-                <tbody>
+            <Card>
+                <Card.Body>
+                    {/* TODO: useMap() here */}
 
-                </tbody>
-            </Table>
+                </Card.Body>
+            </Card>
         </>
     );
 };

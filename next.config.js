@@ -5,7 +5,10 @@ const nextConfig = {
     locales: ['th', 'en'],
     defaultLocale: 'th',
     localeDetection: false,
-  }
+  },
+  images: {
+    domains: ['crests.football-data.org'],
+  },
 }
 
 module.exports = nextConfig

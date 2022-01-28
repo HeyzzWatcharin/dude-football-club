@@ -39,7 +39,7 @@ const DudeNavbar: React.FC<ISideMenu> = () => {
                 className={classnames(style['navbar-styling'],'mx-5')}>
                 {/* <Container> */}
                     <Navbar.Brand
-                        href="#home"
+                        href="/"
                         className='text-white body-5'
                     >
                         {translate('NAVBAR_HEADER')}
