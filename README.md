@@ -2,13 +2,26 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
-
+Steap 0:
 ```bash
-npm run dev
-# or
-yarn dev
+Clone This project into your computer.
 ```
+
+Steap 1:
+```bash
+Run yarn to install project.
+```
+
+Steap 2:
+```bash
+Go to /util/client.ts and change the token key.
+```
+
+Steap 3:
+```bash
+Run yarn dev for run this project.
+```
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
