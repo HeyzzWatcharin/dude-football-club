@@ -1,0 +1,9 @@
+@import "../../../../scss/abstract/colorPalette";
+
+.card-match-styling {
+    background: white;
+    cursor: pointer;
+    &:hover {
+        background: getColor(primary-blue-sky);
+    }
+}

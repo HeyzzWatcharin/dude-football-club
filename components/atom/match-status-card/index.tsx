@@ -1,13 +1,6 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
-import classNames from 'classnames';
-import style from './style.module.scss';
-
-interface IStatus {
-    teamName: string;
-    score: number;
-    status?: number;
-}
+import { IStatus } from '../../../interface/status';
 
 const MatchStatus: React.FC<IStatus> = ({
     teamName,
@@ -16,7 +9,7 @@ const MatchStatus: React.FC<IStatus> = ({
 }) => {
     return (
         <>
-            <Card className={classNames(style['card-match-table-styling'])}>
+            <Card>
                 <Card.Body>
                     <Card.Text className='body-2'>
                         {teamName}

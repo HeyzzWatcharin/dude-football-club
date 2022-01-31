@@ -1,63 +1,25 @@
 import classnames from 'classnames';
 import React from 'react';
-import { Container, Form, Nav, Navbar } from 'react-bootstrap';
-import { useForm } from 'react-hook-form';
-import { yupResolver } from '@hookform/resolvers/yup';
-import * as yup from 'yup';
+import { Navbar } from 'react-bootstrap';
 
 import style from './style.module.scss';
 import useTranslation from '../../../hooks/useTranslation';
-import classNames from 'classnames';
 
-interface ISearchInput {
-    wording: string;
-}
-
-interface ISideMenu {
-    // TODO: Centralize onSearch interface
-    onSearch?: (search?: string | null, knowledgeCategoryId?: number) => void;
-}
-
-const schema = yup.object().shape({
-    wording: yup.string(),
-});
-
-const DudeNavbar: React.FC<ISideMenu> = () => {
-
-    const { setValue, reset } = useForm<ISearchInput>({
-        resolver: yupResolver(schema),
-    });
+const DudeNavbar = () => {
 
     const { translate } = useTranslation();
-
-    // Note: Don't Forgot useDebounce() 300 ms.
     return (
         <>
             <Navbar
                 collapseOnSelect
                 expand="xl"
-                className={classnames(style['navbar-styling'],'mx-5')}>
-                {/* <Container> */}
-                    <Navbar.Brand
-                        href="/"
-                        className='text-white body-5'
-                    >
-                        {translate('NAVBAR_HEADER')}
-                    </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="me-auto my-2">
-                            <Form.Control
-                                onChange={(e) => {
-                                    console.log('on searching ---->', e.target.value)
-                                }}
-                                className={classnames(style['search-input-styling'])}
-                                type="text"
-                                placeholder={translate('NAVBAR_HEADER_SEARCH_TEXT')}
-                            />
-                        </Nav>
-                    </Navbar.Collapse>
-                {/* </Container> */}
+                className={classnames(style['navbar-styling'], 'mx-5')}>
+                <Navbar.Brand
+                    href="/"
+                    className='text-white body-5'
+                >
+                    {translate('NAVBAR_HEADER')}
+                </Navbar.Brand>
             </Navbar>
         </>
     )

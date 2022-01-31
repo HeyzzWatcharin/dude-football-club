@@ -21,8 +21,16 @@ $palette-map: (
     color: white;
 }
 
+.text-pink {
+    color: getColor(primary-pink);
+}
+
 .text-black {
     color: getColor(primary-black);
+}
+
+.text-blue-sky {
+    color: getColor(primary-blue-sky);
 }
 
 .text-smoke {

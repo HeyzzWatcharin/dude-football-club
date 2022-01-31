@@ -16,6 +16,7 @@ export interface IScore {
     fullTime: IFullTime;
     halfTime: IHalfTime;
     penalties: IPenalties;
+    winner: string;
 }
 
 export interface IExtraTime {

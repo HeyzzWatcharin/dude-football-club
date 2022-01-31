@@ -1,9 +1,26 @@
+@import "~bootstrap/scss/bootstrap-utilities";
+
 .card-styling {
     width: 420px;
     height: 200px;
+
+    @include media-breakpoint-down(lg + 2) {
+        width: 280px;
+        height: 220px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        // width: 280px;
+        height: 380px;
+    }
+
     padding: 0.25rem 1rem;
     cursor: pointer;
     border-radius: 1rem;
+    transition: 0.2s;
+    &:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
 }
 
 .vs-styling {

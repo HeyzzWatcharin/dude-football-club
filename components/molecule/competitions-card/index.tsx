@@ -8,18 +8,20 @@ interface ICompetitionCard {
     areaName?: string;
     srcImg: any;
     onClick?: () => void;
+    className?: string;
 }
 
 const CompetitionLeagueCard: React.FC<ICompetitionCard> = ({
     nameLeague,
     areaName,
     srcImg,
-    onClick
+    onClick,
+    className
 }) => {
 
     return (
         <div
-            className={classNames(style['card-styling'],'my-2')}
+            className={classNames(style['card-styling'], 'my-2', className)}
             onClick={onClick}
         >
             <div className={classNames(style['img-styling'])}>

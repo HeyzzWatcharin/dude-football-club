@@ -7,7 +7,7 @@ const TeamMatchesCard = () => {
     return (
         <>
             <div>
-                <Image src={Mockup} height={80} width={75} />
+                <Image src={Mockup} height={80} width={75} alt='img' />
             </div>
         </>
     );
