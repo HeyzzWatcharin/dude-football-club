@@ -1,0 +1,13 @@
+@import "../../../scss/abstract/colorPalette";
+
+.card-team-styling {
+    padding: 2rem;
+    background-color: getColor(white-smoke);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.row-player-styling {
+    background-color: getColor(purple-1);
+    margin: 0.5rem 1rem;
+    display: flex;
+}

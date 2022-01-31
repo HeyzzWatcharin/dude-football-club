@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const client = axios.create({
-    baseURL: 'http://api.football-data.org',
+    baseURL: `http://api.football-data.org`,
 
     timeout: 100 * 1000,
 
