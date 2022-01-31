@@ -13,8 +13,24 @@ $palette-map: (
     @return map_get($palette-map, $name);
 }
 
+.text-blue {
+    color: getColor(primary-blue);
+}
+
 .text-white {
     color: white;
+}
+
+.text-pink {
+    color: getColor(primary-pink);
+}
+
+.text-black {
+    color: getColor(primary-black);
+}
+
+.text-blue-sky {
+    color: getColor(primary-blue-sky);
 }
 
 .text-smoke {

@@ -2,10 +2,13 @@
 const nextConfig = {
   reactStrictMode: true,
   i18n: {
-    locales: ['th', 'en'],
-    defaultLocale: 'th',
+    locales: ['en', 'th'],
+    defaultLocale: 'en',
     localeDetection: false,
-  }
-}
+  },
+  images: {
+    domains: ['crests.football-data.org'],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
